@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+}
+th,td{
+    border: 1px solid black;
+    /* make bordernsatu line  */
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+    padding: 10px;
+}
+table{
+    /* space between table */
+    border-spacing: 5px;
+}
+ul{
+    list-style-type: none;
+    /* rapat kiri */
+    padding: 0;
+    /* rapat atas */
+    margin: 0;
+    /* jadikan blok */
+    overflow:auto;
+    background-color: black;
+}
+/* hyperlink */
+ul a{
+    float: left;
+    padding: 10px;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(34, 157, 112);
+
+}
