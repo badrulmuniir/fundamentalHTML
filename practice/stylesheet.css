@@ -34,3 +34,39 @@ li a:hover{
     background-color: rgb(34, 157, 112);
 
 }
+
+
+.left{
+    padding: 20px;
+    background-color: aqua;
+    float: left;
+    width: 20%;
+}
+.main{
+    padding: 20px;
+    background-color: rgb(38, 255, 0);
+    float: left;
+    width: 60%;
+}
+.right{
+    padding: 20px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+    width: 20%;
+}
+@media screen and (max-width:800px){
+    .left, .main, .right{width: 100%;}
+    
+}
+
+.all{
+    padding: 20px;
+    background-color: lightgray;
+    margin: 0;
+}
+.google{
+    margin: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+    
+}

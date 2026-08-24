@@ -1,0 +1,233 @@
+:root {
+    --primary-color: blue;
+    --background-color: linear-gradient(to right, lightblue, whitesmoke);
+    --card-color: white:
+}
+
+body {
+    background: var(--background-color);
+    /* body-selector, background-color-property, lightblue-value */
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: large;
+}
+
+/* My Profile */
+.title {
+
+    color: purple;
+    text-align: center;
+    padding: 20px;
+    /* padding-ruang dalam border */
+    border: 2px solid;
+    /* border-box solid */
+    margin: 20px;
+    /* margin-ruang outside box */
+    width: 300px;
+    height: 50px;
+    /* box-sizing: border-box; */
+    /* box sizing make box actual border box no addition  */
+
+
+}
+
+/* hello...... */
+.intro {
+    color: green;
+    text-align: center;
+    font-size: 20px;
+}
+
+#about {
+    color: red;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+/* inline-block-side by side */
+/* .box{
+    border: 2px solid;
+    display: inline-block;
+} */
+
+/* flex must use parent class */
+/* .box{ */
+
+/* display: flex; */
+/* inline rapat kiri */
+
+/* horizontal allignment */
+/* justify-content: space; */
+
+/* vertical allignment */
+/* align-items: center; */
+
+/* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+@media(max-width:600px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-box {
+    border: 2px solid;
+    padding: 20px;
+    /* add more smooth transition hover */
+    transition: 0.3s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: var(--card-color);
+}
+
+.skill-box:hover {
+    /* jadi besar */
+    transform: scale(1.05);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* if not enough space move to next line */
+    flex-wrap: wrap;
+}
+
+/* if<600 display 1fr */
+@media(max-width:600px) {
+    .box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* relative  */
+.container {
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+
+.box1 {
+    position: absolute;
+    left: 100px;
+
+    /* position terbalik instruction */
+}
+
+.profile-image {
+    position: relative;
+    width: 200px;
+
+}
+
+.profile-image img :hover {
+    width: 200px;
+    display: block;
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    /*absolute means go left 50px from relative(reference point)*/
+
+    background-color: green;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+/* position: fixed - kedudukan tetap wlau scroll */
+.up-button {
+    position: fixed;
+    
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: blue;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.up-button:hover {
+    background-color: darkblue;
+}
+
+/* position: sticky - for navigation bar */
+.navbar {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+
+    background-color: black;
+    /* move forward */
+    z-index: 1000;
+
+    /* responsive screen */
+    flex-wrap: wrap;
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.contact-btn {
+    padding: 12px 24px;
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    border-radius: 10%;
+    /* cursor pegi dekat button jadi simbol tekan */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: darkblue;
+}
+
+.contact {
+    /* form not longer than 500px */
+    max-width: 500px;
+    margin: 40px auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input,textarea{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}

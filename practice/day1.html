@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- page title -->
     <title>Document</title>
@@ -21,12 +22,15 @@
 <body>
     <!-- bookmark -->
     <a href="#C4">jump to c4</a>
-    <h1 style="background-color: aqua;">Hello World</h1>
+    <!-- 1 -->
+    <h1 style="background-color: aqua; font-size: 9vw;">Hello World</h1>
     <!-- hyperlink -->
     <a href="">google</a>
     <!-- image -->
     <a href="https://en.wikipedia.org/wiki/Morgan_Rogers">
-        <img src="assets/images/image1.jpeg" alt="rogers" width="200" title="click to go wikipedia Morgan_Rogers">
+        <img src="assets/images/image1.jpeg" alt="rogers" title="click to go wikipedia Morgan_Rogers"
+            style="max-width:100% ; height: auto;">
+        <!-- make image takpecah -->
     </a>
     <!-- horizontal rules -->
     <hr>
@@ -117,6 +121,71 @@
         <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to
             its founding by the Romans, who named it Londinium.</p>
     </div>
-</body>
 
+    <button onclick="alert('Bahaya!')">click me</button>
+
+    <button type="submit"></button>
+
+    <iframe src="day1.html" height="200" width="100%"></iframe>
+    <br>
+
+    <p class="left">left</p>
+    <p class="main">main</p>
+    <p class="right">right</p>
+
+    <!-- format text keyboard -->
+    <kbd>ctrl+s</kbd>
+
+    <article class="all">
+    <h1>Most Popular Browser</h1>
+    <article class="google">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. 
+    Chrome is the world's most popular web browser today!
+    </p>
+    </article>
+
+    <article class="mozilla">
+    <h2>Mozila Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. 
+    Firefox has been the second most popular web browser since January, 2018.
+    </p>
+    </article>
+
+    <article class="firefox">
+    <h2>Mozila Firefox</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+    Microsoft Edge replaced Internet Explorer.
+    </p>
+    </article>
+    <br>
+    <h2>HTML Form</h2>
+    <br>
+
+    <form action="" target="_blank" autocomplete="on">
+    <label for="fname">First Name:</label><br>
+    <input type="text" for="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" for="lname"><br><br>
+    <input type="submit">
+    </form>
+
+    <br>
+    <br>
+
+    <!-- group with field set -->
+    <fieldset>
+    <legend>Car Choice</legend>
+    <label for="cars">Choose your car:</label>
+    <!-- wajib select+option for dropdown -->
+    <select name="cars" id="cars">
+    <!-- add size="3" to visible dropdown -->
+        <!-- value for user value for post -->
+        <option value="kancil">kancil</option>
+        <option value="myvi">myvi</option>
+        <option value="viva">viva</option>
+    </select>
+    </fieldset>
+
+</body>
 </html>
