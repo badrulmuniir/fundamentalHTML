@@ -14,6 +14,8 @@
       <a href="#home">home</a>
       <a href="#about">about</a>
       <a href="#skill">skills</a>
+
+      <button id="themeBtn">dark mode</button>
     </nav>
 
     <!-- IMAGE N HELLO -->
@@ -72,25 +74,33 @@
             badrulmuniir01@gmail.com
         </a>
         <br><br>
-         <button class="contact-btn">Contact Me</button>
-        <br><br>
-        <section class="contact">
-            <form>
+
+        <!-- id for javascript -->
+        <button class="contact-btn" id="contactBtn">
+            Contact Me
+        </button>
+
+        <section class="contact" id="contact">
+            <form id="contactForm">
             <label for="name">name</label><br>
             <input type="text" name="name" id="name"><br>
             <label for="email">email</label><br>
-            <input type="email" name="emal" id="email"><br>
+            <input type="email" name="emai" id="email"><br>
             <label for="">message</label><br>
-            <textarea class="form-control" name="" id="" rows="3"></textarea><br>
+            <textarea class="form-control" name="" id="message" rows="3"></textarea><br>
             <button class="send-btn">send message</button>
+
+            <p id="form-message"></p>
             </form>
+            
         </section>
     </footer>
    
 
     <a href="#" class="up-button">↑</a>
 
-   
+
+    <script src="script.js"></script>
 </body>
 
 </html>

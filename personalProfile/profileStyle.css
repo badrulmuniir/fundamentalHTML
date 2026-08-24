@@ -162,7 +162,7 @@ h2 {
 /* position: fixed - kedudukan tetap wlau scroll */
 .up-button {
     position: fixed;
-    
+
     bottom: 20px;
     right: 20px;
     text-decoration: none;
@@ -230,4 +230,28 @@ input,textarea{
     border: 1px solid;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
+}
+#form-message{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.dark-mode{
+     background: #222;
+     color: white;
+}
+.dark-mode .skill-box {
+    background-color: #333;
+    color: white;
+}
+.dark-mode .navbar {
+    background-color: #333;
+}
+.dark-mode .navbar a {
+    color: white;
 }
