@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+   
     <!-- MYPROFILE -->  
     <nav class = "navbar" id="home">
       <a href="#home">home</a>
@@ -19,13 +21,16 @@
     </nav>
 
     <!-- IMAGE N HELLO -->
+    <p id="clock">clock</p>
+    <br>
     <main>
         <div class="profile-image">
         <img src="imageBad.jpeg" alt="This is image Badrul" width="200">
         <span class="badge">student</span>
         </div>
 
-        <p class="intro">Hello, Im Badrul</p>
+        <p class="intro" id="intros">Hello, Im Badrul</p>
+        <button id="introBtn">say hello</button>
     
         <!-- ABOUT ME -->
         <section>
@@ -39,28 +44,26 @@
         <section id="skill">
             <h2>My Skills</h2>
             <div class="skills">
-                <div class="skill-box">
+                <div class="skill-box" id="html">
                     <p>HTML</p>
                     <p>web structure</p>
                 </div>
-                <div class="skill-box">
+                <div class="skill-box" id="css">
                     <P>CSS</P>
                     <p>web design</p>
                 </div>
-                <div class="skill-box">
+                <div class="skill-box" id="java">
                     <p>javascript</p>
                     <p>web resposive</p>
                 </div>
             </div>
+            <p id="skill-message"></p>
         </section>
 
         <!-- MYPROJECT -->
         <section>
             <h2>My Projects</h2>
-            <ul>
-                <li><a href="#">PAwr</a></li>
-                <li><a href="#">TingHao</a></li>
-                <li><a href="#">Myprofile</a></li>
+            <ul id="myProject">
             </ul>
         </section>
 
@@ -83,11 +86,14 @@
         <section class="contact" id="contact">
             <form id="contactForm">
             <label for="name">name</label><br>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="nameInput"><br>
+            <p id="namePreview"></p><br>
             <label for="email">email</label><br>
             <input type="email" name="emai" id="email"><br>
+
             <label for="">message</label><br>
-            <textarea class="form-control" name="" id="message" rows="3"></textarea><br>
+            <textarea class="form-control" name="" id="messageInput" rows="3"></textarea><br>
+            <p id="messageCounter"></p>
             <button class="send-btn">send message</button>
 
             <p id="form-message"></p>
